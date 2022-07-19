@@ -30,3 +30,8 @@ model Person {
   password String?
   tasks    Task[]  @relation("Task_assignedTo")
 }
+
+model Dog {
+  id String @id @default(cuid())
+  name String @default("")
+}
